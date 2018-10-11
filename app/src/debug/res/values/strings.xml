@@ -1,0 +1,10 @@
+<resources>
+    <string name="title_activity_destination_image">destination_image</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_activitytest">MainActivitytest</string>
+    <string name="title_activity_food_outlet_location">food_outlet_location</string>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.shadowsoft.adminEnd.Sell"
+    tools:showIn="@layout/app_bar_sell">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="50sp">
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginBottom="50sp"
+            app:cardBackgroundColor="#ffffff"
+            card_view:cardElevation="20dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Product Name"
+                android:textColor="#000000"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/et_pName"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product name here"
+                android:paddingBottom="20dp"/>
+                <ImageView
+                    android:id="@+id/img_pName"
+                    android:padding="5dp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_alignTop="@+id/et_pName"
+                    android:layout_alignBottom="@+id/et_pName"
+                    android:layout_alignRight="@+id/et_pName"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:onClick="speak_pName"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Product Description"
+                android:textColor="#000000"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/et_pDes"
+                android:paddingBottom="20dp"
+                android:maxLines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Detailed Product Description here"/>
+                <ImageView
+                    android:id="@+id/img_pDes"
+                    android:padding="5dp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_alignTop="@+id/et_pDes"
+                    android:layout_alignBottom="@+id/et_pDes"
+                    android:layout_alignRight="@+id/et_pDes"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:onClick="speak_pDes"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Cost of Product (Rs)"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/et_pCost"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product cost here"
+                android:inputType="numberDecimal"/>
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/share_contact"
+                android:textColor="#000000"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Share your contact details"
+                android:onClick="copy_details"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Seller's Name"
+                android:textColor="#000000"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/et_sName"
+                android:paddingBottom="20dp"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Seller's name"/>
+                <ImageView
+                    android:id="@+id/img_sName"
+                    android:padding="5dp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_alignTop="@+id/et_sName"
+                    android:layout_alignBottom="@+id/et_sName"
+                    android:layout_alignRight="@+id/et_sName"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:onClick="speak_sName"/>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Phone Number"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/et_sPhone"
+                android:paddingBottom="20dp"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number here"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Shop Address"
+                android:textColor="#000000"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/et_sAdd"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Complete Shop Address"
+                android:maxLines="4"/>
+                <ImageView
+                    android:id="@+id/imgname"
+                    android:padding="5dp"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_alignTop="@+id/et_sAdd"
+                    android:layout_alignBottom="@+id/et_sAdd"
+                    android:layout_alignRight="@+id/et_sAdd"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:onClick="speak_sAdd"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.shadowsoft.adminEnd.Homestay_location"
+    tools:showIn="@layout/app_bar_homestay_location"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="in.shadowsoft.adminEnd.MapsActivity" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#ffffff"
+        card_view:cardElevation="20dp"
+        android:layout_weight="0.3"
+        android:layout_alignBottom="@id/map">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="15sp"
+                android:layout_width="75sp"
+                android:layout_height="75sp"
+                android:src="@drawable/ic_home_black_48dp"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/hs_name"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text=""
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/hs_address"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=""
+                    android:textSize="14dp"/>
+                <TextView
+                    android:id="@+id/hs_phone"
+                    android:layout_marginBottom="15sp"
+                    android:drawableLeft="@drawable/ic_phone_black_18dp"
+                    android:drawablePadding="5sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text=""
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

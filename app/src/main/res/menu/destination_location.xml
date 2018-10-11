@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/up_loc"
+        android:title="Next"
+        app:showAsAction="always"
+        android:onClick="launch_destination_image"
+        />
+</menu>
